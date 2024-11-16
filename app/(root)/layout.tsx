@@ -4,11 +4,11 @@ import { getLoggedInUser } from "@/lib/actions/user.actions";
 import Image from "next/image";
 import { redirect } from "next/navigation";
 
-export default function RootLayout({
-  children,
-}: Readonly <{
-  children: React.ReactNode;
-}>) {
+  export default function RootLayout({
+    children,
+  }: Readonly <{
+    children: React.ReactNode;
+  }>) {
   
   const loggedIn = await getLoggedInUser();
 
